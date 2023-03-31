@@ -31,3 +31,18 @@ k=ycbcr2rgb(j);
 figure,
 imshow(k);
 title('YCBCR2RGB');
+
+// iii)RGB2NTSC and NTSC2RGB
+clear all;
+close all;
+i=imread('office_5.jpg');
+figure,
+imshow(i);
+title('ORIGINAL IMAGE');
+j=rgb2ntsc(i);
+figure,
+imshow(j);
+title('RGB2NTSC');
+k=ntsc2rgb(j);
+figure,
+imshow(k);title('NTSC2RGB');
